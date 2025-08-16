@@ -1,0 +1,185 @@
+ 
+<html>
+<head>
+    <title>JObs</title>
+</head> 
+<style>
+    body {
+        background-color:#0a1224;
+        font-family: Arial, sans-serif;
+        color:white;
+    }
+    h1 {
+        text-align: center;
+        color: #4CAF50;
+    }
+    .wrap {
+        background-color: #181e2a;
+        color: #fff;
+        padding: 16px 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        gap: 24px;
+    }
+    .wrap1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 32px;
+        gap: 24px;
+        background-color: #181e2a;
+        border-radius: 8px;
+        width: 200px;
+    }
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+
+}
+.all{
+    display: flex;
+    flex-direction: row; 
+    padding: 16px 32px;
+    gap: 24px;
+}
+.card{
+    background-color: #181e2a;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    color: white;
+    width: 300px;
+    margin: 16px;
+     
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.listofcards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+     
+}
+</style> 
+ <body>
+     <header class="site" role="banner" aria-label="DevJobs top navigation">
+    <div class="wrap topbar">
+      <div class="brand" aria-label="Site logo and name">
+        <span class="dot" aria-hidden="true"></span>
+        <a href="#"><span style="font-size:20px">DevJobs</span></a>
+        <span class="pill" aria-hidden="true">HTML + CSS Demo</span>
+      </div>
+      <form class="search" role="search" aria-label="Search jobs">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <input type="search" placeholder="Search role, company, or keyword… (visual only)" aria-label="Search field" />
+        <span class="kbd" aria-hidden="true">/</span>
+      </form>
+      <nav aria-label="Primary">
+        <a href="#">Post a Job</a>
+        <a href="#">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="all"> 
+      <div class="filter">
+         <h1>Filters</h1>
+        <div class="wrap1">
+            
+            <div>
+                <h2>Location</h2>
+                <input type="radio" id="remote" name="location" value="remote">
+                <label for="remote">Remote</label><br>
+                <input type="radio" id="onsite" name="location" value="onsite">
+                <label for="onsite">Onsite</label><br>
+                <input type="radio" id="hybrid" name="location" value="hybrid">
+                <label for="hybrid">Hybrid</label><br>
+                 
+            </div>
+            <div>
+                <h2>Job Type</h2>
+                 <input type="checkbox" id="fulltime" name="jobtype" value="fulltime">
+                <label for="fulltime">Full Time</label><br>
+                <input type="checkbox" id="parttime" name="jobtype" value="parttime">
+                <label for="parttime">Part Time</label><br>
+                <input type="checkbox" id="contract" name="jobtype" value="contract">
+                <label for="contract">Contract</label><br>
+
+            </div>
+            <div>
+                <h2>Experience Level</h2>
+                 <input type="radio" id="junior" name="experience" value="junior">
+                <label for="junior">Junior</label><br>
+                <input type="radio" id="mid" name="experience" value="mid">
+                <label for="mid">Mid</label><br>
+                <input type="radio" id="senior" name="experience" value="senior">
+                <label for="senior">Senior</label><br>
+
+            </div>
+      </div>
+      </div> 
+      <div class="listofcards">
+        <div class="card">
+            <h3>Frontend Developer – Remote</h3>
+            <p><strong>Company:</strong> TechNova Labs</p>
+            <p><strong>Job Type:</strong> Full-time</p>
+            <p><strong>Experience:</strong> Junior</p>
+            <p><strong>Salary:</strong> ₹10–14 LPA</p>
+            <p><strong>Posted:</strong> Aug 12, 2025</p>
+            <button type="button">Apply Now</button>
+ 
+        </div>
+        <div class="card">
+            <h3>Backend Developer – Onsite</h3>
+            <p><strong>Company:</strong> CodeCrafters Inc.</p>
+            <p><strong>Job Type:</strong> Full-time</p>
+            <p><strong>Experience:</strong> Mid</p>
+            <p><strong>Salary:</strong> ₹12–18 LPA</p>
+            <p><strong>Posted:</strong> Aug 10, 2025</p>
+            <button type="button">Apply Now</button>
+        </div>
+        <div class="card">
+            <h3>Data Scientist – Hybrid</h3>
+            <p><strong>Company:</strong> DataInsights Ltd.</p>
+            <p><strong>Job Type:</strong> Contract</p>
+            <p><strong>Experience:</strong> Senior</p>
+            <p><strong>Salary:</strong> ₹20–30 LPA</p>
+            <p><strong>Posted:</strong> Aug 8, 2025</p>
+            <button type="button">Apply Now</button>
+
+      </div>
+        <div class="card">
+            <h3>UI/UX Designer – Remote</h3>
+            <p><strong>Company:</strong> Creative Minds</p>
+            <p><strong>Job Type:</strong> Part-time</p>
+            <p><strong>Experience:</strong> Junior</p>
+            <p><strong>Salary:</strong> ₹8–12 LPA</p>
+            <p><strong>Posted:</strong> Aug 5, 2025</p>
+            <button type="button">Apply Now</button>
+        </div>
+        <div class="card">
+            <h3>DevOps Engineer – Onsite</h3>
+            <p><strong>Company:</strong> Cloud Solutions</p>
+            <p><strong>Job Type:</strong> Full-time</p>
+            <p><strong>Experience:</strong> Mid</p>
+            <p><strong>Salary:</strong> ₹15–22 LPA</p>
+            <p><strong>Posted:</strong> Aug 3, 2025</p>
+            <button type="button">Apply Now</button>
+      
+    </div>
+    </div>
+       
+   
+</body>
+</html>
+ 
